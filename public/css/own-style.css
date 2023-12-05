@@ -1,0 +1,11 @@
+:root{
+    --color-1: #BECAE6;
+    --color-2: #219EBC;
+    --color-3: #023047;
+    --color-4: #FFB703;
+    --color-5: #FB8500;
+}
+
+.bgHeaderColor{
+    background-color: var(--color-2);
+}
