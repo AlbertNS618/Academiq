@@ -33,8 +33,8 @@
                     <li>
                         <a class="nav-link" href="">Login</a>
                     </li>
-                    <li class="">
-                        <a class="nav-link" href="">Register</a>
+                    <li>
+                        <a class="nav-link bg" href="">Register</a>
                     </li>
                 </ul>
             </div>
