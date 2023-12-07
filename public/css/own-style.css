@@ -9,3 +9,7 @@
 .bgHeaderColor{
     background-color: var(--color-2);
 }
+
+#penjurusan button:focus{
+    background-color: var(--color-2);
+}

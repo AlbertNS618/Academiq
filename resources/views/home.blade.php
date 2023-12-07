@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{url('/css/bootstrap.css')}}">
+    {{-- <link rel="stylesheet" href="{{url('/css/bootstrap.css')}}"> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url('/css/own-style.css')}}">
     <title>Homepage</title>
 </head>
@@ -15,7 +16,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse mx-5">
                 <ul class="navbar-nav">
                     <li class="nav-item active mx-5">
                         <a class="nav-link" href="#">Home</a>
@@ -56,32 +57,41 @@
 
         </div>
     </header>
-    <main class=" my-5">
+    <main class="my-5">
         <div class=" d-flex align-items-center flex-column">
             <h2 class="fw-bold" >Learn based on your School Interest</h2>
-            <div id="penjurusan" class="carousel slide">
+            <div id="penjurusan" class="carousel slide my-5 d-flex flex-column align-items-center">
                 <div class="badge rounded-pill">
-                    <ul class=" list-group list-group-horizontal carousel-indicators">
-                        <li class="list-group-item border border-black active" data-target="#penjurusan" data-slide-to="0">IPA</li>
-                        <li class="list-group-item border border-black" data-target="#penjurusan" data-slide-to="1">IPS</li>
+                    <ul class="list-group list-group-horizontal ">
+                        <li class="list-group-item border border-black">
+                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn " aria-current="true">IPA</button>
+                        </li>
+                        <li class="list-group-item border border-black">
+                            <button type="button" data-bs-target="#penjurusan" class="btn" data-bs-slide-to="1">IPS</button>
+                        </li>
                     </ul>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active d-flex flex-col align-content-around">
-                        <img src="{{url('/img/Math.png')}}" class=" d-block" alt="...">
-                        <img src="{{url('/img/Physics.png')}}" class=" d-block" alt="...">
-                        <img src="{{url('/img/Chemistry.png')}}" class=" d-block" alt="...">
-                        <img src="{{url('/img/English.png')}}" class=" d-block" alt="...">
+                <div class="carousel-inner mt-5">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-row align-items-around">
+                            <img src="{{url('/img/Math.png')}}" class=" d-block" alt="...">
+                            <img src="{{url('/img/Physics.png')}}" class=" d-block" alt="...">
+                            <img src="{{url('/img/Chemistry.png')}}" class=" d-block" alt="...">
+                            <img src="{{url('/img/English.png')}}" class=" d-block" alt="...">
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{url('/img/Math.png')}}" class="d-block" alt="...">
-                        <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
-                        <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
+                        <div class=" d-flex flex-row align-items-around">
+                            <img src="{{url('/img/Math.png')}}" class="d-block" alt="...">
+                            <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
+                            <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script></script>
+    {{-- <script src="{{url('/js/app.js')}}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
