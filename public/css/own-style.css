@@ -13,3 +13,7 @@
 #penjurusan button:focus{
     background-color: var(--color-2);
 }
+
+#penjurusan button:active{
+    background-color: var(--color-2);
+}

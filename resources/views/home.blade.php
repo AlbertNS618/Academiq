@@ -44,12 +44,14 @@
     <header>
         <div class="bgHeaderColor d-flex align-items-center px-4 py-5 justify-content-around cont">
             <div>
-                <h1 class=" fw-bold">Elevate Your Learning</h1>
-                <p class=" w-75">
-                    Begin your learning journey wherever level you're in.
-                    We will help you!
-                </p>
-                <div class="badge rounded-pill bg-warning px-4 py-3 fw-bold fs-4 ">
+                <div>
+                    <h1 class="fw-bold">Elevate Your Learning</h1>
+                    <p class="w-75">
+                        Begin your learning journey wherever level you're in.
+                        We will help you!
+                    </p>
+                </div>
+                <div class="badge rounded-pill bg-warning px-4 py-3 fw-bold fs-4 my-4">
                     <a class="text-dark text-decoration-none">Start Now!</a>
                 </div>
             </div>
@@ -59,39 +61,63 @@
     </header>
     <main class="my-5">
         <div class=" d-flex align-items-center flex-column">
-            <h2 class="fw-bold" >Learn based on your School Interest</h2>
+            <h2 class="fw-bold">Learn based on your School Interest</h2>
             <div id="penjurusan" class="carousel slide my-5 d-flex flex-column align-items-center">
-                <div class="badge rounded-pill">
+                <div>
                     <ul class="list-group list-group-horizontal ">
-                        <li class="list-group-item border border-black">
-                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn " aria-current="true">IPA</button>
+                        <li class="list-group-item">
+                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn border-black" aria-current="true">IPA</button>
                         </li>
-                        <li class="list-group-item border border-black">
-                            <button type="button" data-bs-target="#penjurusan" class="btn" data-bs-slide-to="1">IPS</button>
+                        <li class="list-group-item">
+                            <button type="button" data-bs-target="#penjurusan" class="btn border-black" data-bs-slide-to="1">IPS</button>
                         </li>
                     </ul>
                 </div>
                 <div class="carousel-inner mt-5">
                     <div class="carousel-item active">
-                        <div class="d-flex flex-row align-items-around">
-                            <img src="{{url('/img/Math.png')}}" class=" d-block" alt="...">
-                            <img src="{{url('/img/Physics.png')}}" class=" d-block" alt="...">
-                            <img src="{{url('/img/Chemistry.png')}}" class=" d-block" alt="...">
-                            <img src="{{url('/img/English.png')}}" class=" d-block" alt="...">
+                        <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
+                            <div>
+                                <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>MATH</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>PHYSICS</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/Chemistry.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>CHEMISTRY</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>ENGLISH</div>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class=" d-flex flex-row align-items-around">
-                            <img src="{{url('/img/Math.png')}}" class="d-block" alt="...">
-                            <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
-                            <img src="{{url('/img/Chemistry.png')}}" class="d-block" alt="...">
+                        <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
+                            <div>
+                                <img src="{{url('/img/Geology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>GEOLOGY</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/Sociology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>SOCIOLOGY</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/Economy.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>ECONOMY</div>
+                            </div>
+                            <div>
+                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div>ENGLISH</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    {{-- <script src="{{url('/js/app.js')}}"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
