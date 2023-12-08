@@ -7,7 +7,8 @@
     {{-- <link rel="stylesheet" href="{{url('/css/bootstrap.css')}}"> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url('/css/own-style.css')}}">
-    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Home</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-light shadow-sm">
@@ -32,17 +33,17 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li>
-                        <a class="nav-link" href="">Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                     <li>
-                        <a class="nav-link bg" href="">Register</a>
+                        <a class="nav-link bg" href="/register">Register</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <header>
-        <div class="bgHeaderColor d-flex align-items-center px-4 py-5 justify-content-around cont">
+        <div class="color2 d-flex align-items-center px-4 py-5 justify-content-around cont">
             <div>
                 <div>
                     <h1 class="fw-bold">Elevate Your Learning</h1>
@@ -77,7 +78,11 @@
                     <div class="carousel-item active">
                         <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
                             <div>
-                                <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <div class="subject-bg p-3 mb-4 ">
+                                    <div class="">
+                                        <img src="{{url('/img/Math.png')}}" class="d-block"  alt="...">
+                                    </div>
+                                </div>
                                 <div>MATH</div>
                             </div>
                             <div>
@@ -118,6 +123,17 @@
             </div>
         </div>
     </main>
+    <section>
+        <div>
+            <div>
+                <h1>Strengthen your knowledge daily</h1>
+                <p>Start to plan for daily studying using the daily planner.</p>
+            </div>
+            <div class=" badge badge-pill bg-black">Plan Now <i class="bi bi-arrow-right"></i></div>
+            <img src="" alt="">
+            <div class="star-five"></div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
