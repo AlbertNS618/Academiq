@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\User as Authenticatable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Authenticatable;
 
-class User extends Authenticatable
+class User extends Model implements AuthenticatableContract
 {
-    use HasFactory;
+    use Authenticatable;
 
     protected $table = 'tb_user';
     protected $primary_key = 'user_id';
@@ -17,4 +18,4 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-}   
+}
