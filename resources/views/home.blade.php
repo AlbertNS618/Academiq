@@ -12,10 +12,10 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-light shadow-sm">
-        <div class="container-fluid fw-medium d-flex justify-content-between">
+        <div class="container-fluid fw-bold d-flex justify-content-beteween px-5">
             <img src="{{url('/img/logo.png')}}" alt="" width="60px" class="navbar-brand mx-5">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <div class="badge rounded-pill color2 px-4 py-3">{{session('login')}}</div>
             </button>
             <div class="collapse navbar-collapse mx-5">
                 <ul class="navbar-nav">
@@ -31,14 +31,19 @@
                 </ul>
             </div>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li>
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                    <li>
-                        <a class="nav-link bg" href="/register">Register</a>
-                    </li>
-                </ul>
+                @if (session('login'))
+                    <div class="badge rounded-pill color2 px-4 py-3">{{session('login')}}</div>
+
+                @else
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li>
+                            <a class="nav-link bg" href="/register">Register</a>
+                        </li>
+                    </ul>
+                @endif
             </div>
         </div>
     </nav>
@@ -56,7 +61,7 @@
                     <a class="text-dark text-decoration-none">Start Now!</a>
                 </div>
             </div>
-            <img class="rounded-circle bg-white m-3" width="400px" src="{{url('/img/manheader.png')}}" alt="">
+            <img class="rounded-circle bg-white m-3 img-fluid" width="400px" src="{{url('/img/manheader.png')}}" alt="">
 
         </div>
     </header>
