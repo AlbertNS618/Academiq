@@ -68,14 +68,18 @@
     <main class="my-5">
         <div class=" d-flex align-items-center flex-column">
             <h2 class="fw-bold">Learn based on your School Interest</h2>
-            <div id="penjurusan" class="carousel slide my-5 d-flex flex-column align-items-center">
+            <div id="penjurusan" class="carousel my-5 d-flex flex-column align-items-center" data-bs-ride="true">
                 <div>
-                    <ul class="list-group list-group-horizontal ">
-                        <li class="list-group-item">
-                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn border-black" aria-current="true">IPA</button>
+                    <ul class="list-group list-group-horizontal fs-3">
+                        <li class="list-group-item border-0">
+                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn badge rounded-pill border-black text-dark px-4 py-2" aria-current="true">
+                                IPA
+                            </button>
                         </li>
-                        <li class="list-group-item">
-                            <button type="button" data-bs-target="#penjurusan" class="btn border-black" data-bs-slide-to="1">IPS</button>
+                        <li class="list-group-item border-0">
+                            <button type="button" data-bs-target="#penjurusan" class="btn badge rounded-pill border-black text-dark px-4 py-2" data-bs-slide-to="1">
+                                IPS
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -83,23 +87,23 @@
                     <div class="carousel-item active">
                         <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
                             <div>
-                                <div class="subject-bg p-3 mb-4 ">
-                                    <div class="">
-                                        <img src="{{url('/img/Math.png')}}" class="d-block"  alt="...">
+                                <div class="subject-bg p-3 mb-4">
+                                    <div class="subject-front">
                                     </div>
+                                    <img src="{{url('/img/Math.png')}}" class="d-block" width="150px"  alt="...">
                                 </div>
                                 <div>MATH</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4 som" width="150px" alt="...">
                                 <div>PHYSICS</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/Chemistry.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/Chemistry.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>CHEMISTRY</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>ENGLISH</div>
                             </div>
                         </div>
@@ -107,19 +111,19 @@
                     <div class="carousel-item">
                         <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
                             <div>
-                                <img src="{{url('/img/Geology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/Geology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>GEOLOGY</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/Sociology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/Sociology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>SOCIOLOGY</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/Economy.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/Economy.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>ECONOMY</div>
                             </div>
                             <div>
-                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
+                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                                 <div>ENGLISH</div>
                             </div>
                         </div>
