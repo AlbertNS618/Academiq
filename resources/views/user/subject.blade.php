@@ -21,13 +21,13 @@
             <div class="collapse navbar-collapse mx-5">
                 <ul class="navbar-nav">
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-5">
                         <a class="nav-link" href="/subject">Subject</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="">Exercise</a>
+                        <a class="nav-link" href="/exercise">Exercise</a>
                     </li>
                 </ul>
             </div>

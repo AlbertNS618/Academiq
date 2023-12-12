@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- <link rel="stylesheet" href="{{url('/css/bootstrap.css')}}"> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{url('/css/own-style.css')}}">
+    <link rel="stylesheet" href="{{url('/css/exer-style.css')}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="icon" href="{{url('/img/logo.png')}}" type="image/icon type">
     <title>Exercise Page</title>
 </head>
 <body>
@@ -21,10 +22,10 @@
             <div class="collapse navbar-collapse mx-5">
                 <ul class="navbar-nav">
                     <li class="nav-item active mx-5">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="">Subject</a>
+                        <a class="nav-link" href="/subject">Subject</a>
                     </li>
                     <li class="nav-item mx-5">
                         <a class="nav-link" href="/exercise">Exercise</a>
@@ -54,7 +55,7 @@
                 <h1 class="fw-bold">
                     With exercise, sharpen our ability</br>
                     to understand the material we have</br>
-                    learned</h1> 
+                    learned</h1>
             </div>
         </div>
     </header>
@@ -69,14 +70,14 @@
             </select>
         </div>
 
-        <div style="padding-top: 40px; padding-bottom: 30px; padding-left: 250px"> 
+        <div style="padding-top: 40px; padding-bottom: 30px; padding-left: 250px">
             <h2 style="color:white;">Choose a Subject<h2>
         </div>
 
         <div class="d-flex align-items-center flex-column" style="padding-bottom: 20px; color: white">
             <h2 class="fw-bold">IPA</h2>
         </div>
-        
+
         <div class="d-flex flex-row justify-content-center align-items-center gap-5 text-center fw-bold fs-5">
             @foreach($subjects->where('major', 'IPA') as $subject)
                 <div>
