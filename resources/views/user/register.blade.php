@@ -5,12 +5,12 @@
             <div class="frame"></div>
             <img class="image" src="img/graphic_design.jpeg"/>
             <div class="text-wrapper">Elevate Your Learning</div>
-            <p class="p">Begin your learning journey with Academique wherever level you’re in. We will help you!</p>
+            <p class="p">Begin your learning journey with Academique wherever level you're in. We will help you!</p>
         </div>
         <div class="overlap-group">
              <a class="overlap-wrapper" href="/">
                 <img class="logo" src="img/logo.png"/>
-                <div class="text-wrapper-6 mt-2">ACADEMIQUE</div>
+                <div class="text-wrapper-6 mt-2">ACADEMIQ</div>
              </a>
             @if($errors->any())
                 @foreach($errors->all() as $err)
