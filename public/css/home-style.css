@@ -1,0 +1,63 @@
+:root{
+    --color-1: #BECAE6;
+    --color-2: #219EBC;
+    --color-3: #023047;
+    --color-4: #FFB703;
+    --color-5: #FB8500;
+}
+
+.color1{
+    background-color: var(--color-1);
+}
+
+.color2{
+    background-color: var(--color-2);
+}
+
+.color3{
+    background-color: var(--color-3);
+}
+
+.color4{
+    background-color: var(--color-4);
+}
+
+.color5{
+    background-color: var(--color-5);
+}
+
+#penjurusan button:focus{
+    background-color: var(--color-2);
+}
+
+
+.subject-bg{
+    background-color: var(--color-3);
+    border: 5px solid black;
+    border-radius: 5%;
+    position: relative;
+    display: block;
+}
+
+.subject-front{
+    border-radius: 25% 75% 25% 75% / 0% 100% 0% 100%;
+    background-color: white;
+    border: 0 solid transparent;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#penjurusan button:focus{
+    background-color: var(--color-2);
+}
+
+#penjurusan button:active{
+    background-color: var(--color-2);
+}
+
+.plan{
+    width: 14rem;
+}
