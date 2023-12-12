@@ -26,7 +26,7 @@
                         <a class="nav-link" href="">Subject</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="">Exercise</a>
+                        <a class="nav-link" href="/exercise">Exercise</a>
                     </li>
                 </ul>
             </div>
