@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ExerciseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,9 @@ Route::post('/register', [UserController::class, 'register_action'])->name('regi
 Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::post('/login', [UserController::class, 'login_action'])->name('login.action');
 Route::get('/subject', [UserController::class, 'subject'])->name('subject');
+
+Route::get('/exercise', [ExerciseController::class, 'exerciseView']);
+Route::get('/evaluation', [ExerciseController::class, 'evaluationView']);
+
+Route::get('/insertEvaluation', [ExerciseController::class, 'insertEvaluation']);
+Route::get('/insertSubject', [ExerciseController::class, 'insertSubject']);
