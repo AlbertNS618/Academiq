@@ -18,7 +18,7 @@ class ExerciseController extends Controller
         $subject->save();
         dump($subject);
     }
-    
+
     public function insertEvaluation() {
         $evaluation = new Evaluation;
 
@@ -36,13 +36,13 @@ class ExerciseController extends Controller
     public function exerciseView() {
         $grades = ['12th grade', '11th grade', '10th grade'];
         $subjects = Subject::all();
-        return view('exercise', ['grades' => $grades, 'subjects' => $subjects]);
+        return view('exercise', ['grades' => $grades, 'subjects' => $subjects])->with('login', Auth::user()->name);
     }
 
     public function evaluationView(Request $request) {
         $subjectId = $request->input('subjectId');
         $grade = $request->input('grade');
-    
+
         // Retrieve exercises based on subjectId and grade
         $evaluations = Evaluation::where('subject_id', $subjectId)
                         ->where('grade', $grade)
@@ -50,8 +50,8 @@ class ExerciseController extends Controller
                         ->get();
 
         $subject = Subject::find($subjectId);
-    
+
         return view('evaluation', ['evaluations' => $evaluations, 'grade' => $grade, 'major' => $subject->major,
-        'subject_name' => $subject->subject_name,]);
+        'subject_name' => $subject->subject_name,])->with('login', Auth::user()->name);
     }
 }

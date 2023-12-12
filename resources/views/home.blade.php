@@ -32,11 +32,11 @@
             </div>
             <div class="collapse navbar-collapse">
                 @if (session('login'))
-                    <div class="badge rounded-pill color2 px-4 py-3">{{session('login')}}</div>
+                    <div>Hi, {{session('login')}}</div>
                 @else
                     <ul class="navbar-nav">
                         <li>
-                            <a class="nav-link" href="/login">Login</a>|
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
                         <li>
                             <a class="nav-link bg" href="/register">Register</a>
@@ -57,7 +57,7 @@
                     </p>
                 </div>
                 <div class="badge rounded-pill bg-warning px-4 py-3 fw-bold fs-4 my-4">
-                    <a class="text-dark text-decoration-none">Start Now!</a>
+                    <a class="text-dark text-decoration-none" href="/subscription">Start Now!</a>
                 </div>
             </div>
             <img class="rounded-circle bg-white m-3 img-fluid" width="400px" src="{{url('/img/manheader.png')}}" alt="">
