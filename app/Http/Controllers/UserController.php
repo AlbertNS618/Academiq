@@ -59,13 +59,13 @@ class UserController extends Controller
 
     public function subject()
     {
-        
-        return view('user/subject')->with('login', Auth::user()->name);
+
+        return view('user/subject');
     }
 
     public function subscribe()
     {
-        return view('subscription')->with('login', Auth::user()->name);
+        return view('subscription');
     }
 
 }
