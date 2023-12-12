@@ -243,15 +243,15 @@ border-radius: 20px;
 }
 
 .container .text-wrapper-5 {
-position: relative;
-font-family: "Inter-SemiBold", Helvetica;
-font-weight: 600;
-color: #ffffff;
-font-size: 20px;
-text-align: center;
-letter-spacing: 0;
-line-height: normal;
-white-space: nowrap;
+    position: relative;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
 }
 
 .container .overlap-wrapper {
@@ -263,100 +263,100 @@ left: 250px;
 }
 
 .container .logo {
-position: absolute;
-width: 97px;
-height: 106px;
-top: 0;
-left: 20px;
-object-fit: cover;
+    position: absolute;
+    width: 97px;
+    height: 106px;
+    top: 0;
+    left: 20px;
+    object-fit: cover;
 }
 
 .container .text-wrapper-6 {
-position: absolute;
-top: 95px;
-left: 6;
-font-family: "Birthstone-Regular", Helvetica;
-font-weight: 400;
-color: var(--color-3);
-font-size: 20px;
-text-align: left;
-letter-spacing: 0;
-line-height: normal;
+    position: absolute;
+    top: 95px;
+    left: 15px;
+    font-family: "Birthstone-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--color-3);
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 .container .have-an-account {
-position: absolute;
-width: 390px;
-top: 668px;
-left: 80px;
-font-family: "Inter-Bold", Helvetica;
-font-weight: 700;
-color: var(--color-3);
-font-size: 18px;
-text-align: justify;
-letter-spacing: 0;
-line-height: normal;
+    position: absolute;
+    width: 390px;
+    top: 668px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--color-3);
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 .container .by-clicking-login {
-position: absolute;
-width: 390px;
-top: 522px;
-left: 80px;
-font-family: "Inter-Regular", Helvetica;
-font-weight: 400;
-color: transparent;
-font-size: 18px;
-text-align: justify;
-letter-spacing: 0;
-line-height: normal;
+    position: absolute;
+    width: 390px;
+    top: 522px;
+    left: 80px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 .container .text-wrapper-7 {
-color: var(--color-5);
+    color: var(--color-5);
 }
 
 .container .overlap-group-wrapper-2 {
-position: absolute;
-width: 480px;
-height: 50px;
-top: 390px;
-left: 80px;
+    position: absolute;
+    width: 480px;
+    height: 50px;
+    top: 390px;
+    left: 80px;
 }
 
 .container .btn-wrapper-2 {
-position: relative;
-width: 480px;
-height: 50px;
-background-color: var(--color-3);
-border-radius: 20px;
+    position: relative;
+    width: 480px;
+    height: 50px;
+    background-color: var(--color-3);
+    border-radius: 20px;
 }
 
 .container .text-wrapper-8 {
-position: absolute;
-width: 480px;
-left: 0;
-top: 14px;
-font-family: "Inter-Semibold", Helvetica;
-font-weight: 600;
-color: #ffffff;
-font-size: 20px;
-text-align: center;
-letter-spacing: 0;
-line-height: normal;
-white-space: nowrap;
+    position: absolute;
+    width: 480px;
+    left: 0;
+    top: 14px;
+    font-family: "Inter-Semibold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
 }
 
 .container .dont-have-an-account {
-position: absolute;
-width: 390px;
-top: 460px;
-left: 80px;
-font-family: "Inter-Bold", Helvetica;
-font-weight: 700;
-color: var(--color-3);
-font-size: 18px;
-text-align: justify;
-letter-spacing: 0;
-line-height: normal;
+    position: absolute;
+    width: 390px;
+    top: 460px;
+    left: 80px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--color-3);
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
 }

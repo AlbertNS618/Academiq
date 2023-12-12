@@ -57,4 +57,10 @@ class UserController extends Controller
         ]);
     }
 
+    public function subject()
+    {
+        $data['title'] = 'Subject';
+        return view('user/subject', $data);
+    }
+
 }

@@ -10,7 +10,7 @@
         <div class="overlap-group">
              <a class="overlap-wrapper" href="/">
                 <img class="logo" src="img/logo.png" />
-                <div class="text-wrapper-6 mt-2">ACADEMIQUE</div>
+                <div class="text-wrapper-6 mt-2">ACADEMIQ</div>
              </a>
             @if(session('success'))
                 <p class="alert alert-success">{{ session('success') }}</p>
