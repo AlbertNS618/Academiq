@@ -33,7 +33,6 @@
             <div class="collapse navbar-collapse">
                 @if (session('login'))
                     <div class="badge rounded-pill color2 px-4 py-3">{{session('login')}}</div>
-
                 @else
                     <ul class="navbar-nav">
                         <li>
@@ -69,15 +68,15 @@
         <div class=" d-flex align-items-center flex-column">
             <h2 class="fw-bold">Learn based on your School Interest</h2>
             <div id="penjurusan" class="carousel my-5 d-flex flex-column align-items-center" data-bs-ride="true">
-                <div>
+                <div class=" mb-5">
                     <ul class="list-group list-group-horizontal fs-3">
                         <li class="list-group-item border-0">
-                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn badge rounded-pill border-black text-dark px-4 py-2" aria-current="true">
+                            <button type="button" data-bs-target="#penjurusan" data-bs-slide-to="0" class="btn badge rounded-pill border-black text-dark px-4 py-2 border-2" aria-current="true">
                                 IPA
                             </button>
                         </li>
                         <li class="list-group-item border-0">
-                            <button type="button" data-bs-target="#penjurusan" class="btn badge rounded-pill border-black text-dark px-4 py-2" data-bs-slide-to="1">
+                            <button type="button" data-bs-target="#penjurusan" class="btn badge rounded-pill border-black text-dark px-4 py-2 border-2" data-bs-slide-to="1">
                                 IPS
                             </button>
                         </li>
@@ -86,14 +85,10 @@
                 <div class="carousel-inner mt-5">
                     <div class="carousel-item active">
                         <div class="d-flex flex-row gap-5 text-center fw-bold fs-5">
-                            <div>
-                                <div class="subject-bg p-3 mb-4">
-                                    <div class="subject-front">
-                                    </div>
-                                    <img src="{{url('/img/Math.png')}}" class="d-block" width="150px"  alt="...">
+                                <div>
+                                    <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4 som" width="150px" alt="...">
+                                    <div>MATH</div>
                                 </div>
-                                <div>MATH</div>
-                            </div>
                             <div>
                                 <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4 som" width="150px" alt="...">
                                 <div>PHYSICS</div>
@@ -132,14 +127,16 @@
             </div>
         </div>
     </main>
-    <section>
-        <div>
-            <div>
-                <h1>Strengthen your knowledge daily</h1>
-                <p>Start to plan for daily studying using the daily planner.</p>
+    <section class=" p-5 m-5">
+        <div class="d-flex">
+            <div class=" me-auto">
+                <div class=" mb-5">
+                    <h1 class="fw-bold">Strengthen your knowledge daily</h1>
+                    <p class="fw-medium">Start to plan for daily studying using the daily planner.</p>
+                </div>
+                <div class=" badge badge-pill color2 ps-2 pe-4 py-3 plan fs-5 fw-bolder">Plan Now <i class="bi bi-arrow-right ms-3"></i></div>
             </div>
-            <div class=" badge badge-pill bg-black">Plan Now <i class="bi bi-arrow-right"></i></div>
-            <img src="" alt="">
+            <img src="{{url('img/scooterman.png')}}" class=" max-w-xl" width="400px" alt="">
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

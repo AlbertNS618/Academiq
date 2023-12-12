@@ -58,6 +58,10 @@ background-color: var(--color-2);
 background-color: var(--color-2);
 }
 
+.plan{
+    width: 14rem;
+}
+
 .container {
 background-color: #ffffff;
 display: flex;
