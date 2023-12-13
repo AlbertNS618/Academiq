@@ -11,9 +11,9 @@ class ExerciseController extends Controller
     public function insertSubject() {
         $subject = new Subject;
 
-        $subject->subject_name = 'ENGLISH';
-        $subject->major = 'IPS';
-        $subject->image_url = '/img/English.png';
+        $subject->subject_name = 'MATH';
+        $subject->major = 'IPA';
+        $subject->image_url = '/img/Math.png';
 
         $subject->save();
         dump($subject);
@@ -36,7 +36,7 @@ class ExerciseController extends Controller
     public function exerciseView() {
         $grades = ['12th grade', '11th grade', '10th grade'];
         $subjects = Subject::all();
-        return view('exercise', ['grades' => $grades, 'subjects' => $subjects])->with('login', Auth::user()->name);
+        return view('exercise', ['grades' => $grades, 'subjects' => $subjects]);
     }
 
     public function evaluationView(Request $request) {
@@ -52,6 +52,6 @@ class ExerciseController extends Controller
         $subject = Subject::find($subjectId);
 
         return view('evaluation', ['evaluations' => $evaluations, 'grade' => $grade, 'major' => $subject->major,
-        'subject_name' => $subject->subject_name,])->with('login', Auth::user()->name);
+        'subject_name' => $subject->subject_name,]);
     }
 }

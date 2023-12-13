@@ -47,101 +47,58 @@
             </div>
         </div>
     </nav>
-    <header>
 
-        <div class="bgHeaderColor d-flex align-items-center px-4 py-5 justify-content-around cont">
-            <div class="box">
-                <div class="course">
-                    <div class="IPA">
-                        <div class="text-wrapper-5">IPA </div>
-                        <div class="chemistry">
-                            <div>
-                                <img src="{{url('/img/Chemistry.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper">CHEMISTRY</div>
-                        </div>
-                        <div class="physics">
-                            <div>
-                                <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper">PHYSICS</div>
+    <header class="d-flex justify-content-center py-5 color2">
+        <h1 class="mt-5 text-white">A Broad Selection of Courses Based on Your School Interest</h1>
+    </header>
 
-                        </div>
-                        <div class="math">
-                            <div>
-                                <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-
-                            </div>
-                            <div class="text-wrapper-2">MATH</div>
-
-
-                        </div>
-                        <div class="biology">
-                            <div>
-                                <img src="{{url('/img/Biology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper-3">BIOLOGY</div>
-
-
-                        </div>
-                        <div class="english">
-                            <div>
-                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper-4">ENGLISH</div>
-                        </div>
-                        <div class="text-wrapper-5">IPA</div>
-
-
-
-                    </div>
-                    <div class="IPS">
-                        <div class="text-wrapper-5">IPS</div>
-                        <div class="geography">
-                            <div>
-                                <img src="{{url('/img/Geography.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper">GEOGRAPHY</div>
-                        </div>
-                        <div class="math">
-                            <div>
-                                <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper">MATH</div>
-                        </div>
-                        <div class="economy">
-                            <div>
-                                <img src="{{url('/img/Economy.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper-2">ECONOMY</div>
-                        </div>
-                        <div class="english">
-                            <div>
-                                <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper-3">ENGLISH</div>
-
-
-                        </div>
-                        <div class="history">
-                            <div>
-                                <img src="{{url('/img/parchment.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="200px" alt="...">
-                            </div>
-                            <div class="text-wrapper-4">HISTORY</div>
-                        </div>
-                    </div>
-                    <div class="text">
-                        <p class="p">A Broad Selection of Course Based on Your School Interest
-                    </div>
-
-
+    <main class="pt-5 px-5 color2">
+        <div class="py-5 d-flex flex-column">
+            <h2 class="text-white flex">IPA</h2>
+            <div class="d-flex flex-row justify-content-around jus text-center fw-bold fs-5 px-5">
+                <div>
+                    <img src="{{url('/img/Math.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4 som" width="150px" alt="...">
+                    <div>MATH</div>
                 </div>
-
+                <div>
+                    <img src="{{url('/img/Physics.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4 som" width="150px" alt="...">
+                    <div>PHYSICS</div>
+                </div>
+                <div>
+                    <img src="{{url('/img/Chemistry.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>CHEMISTRY</div>
+                </div>
+                <div>
+                    <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>ENGLISH</div>
+                </div>
             </div>
-
         </div>
 
-    </header>
+        <div class="py-5">
+            <h2 class="text-white">IPS</h2>
+            <div class="d-flex flex-row justify-content-around gap-5 text-center fw-bold fs-5 px-5">
+                <div>
+                    <img src="{{url('/img/Geology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>GEOLOGY</div>
+                </div>
+                <div>
+                    <img src="{{url('/img/Sociology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>SOCIOLOGY</div>
+                </div>
+                <div>
+                    <img src="{{url('/img/Economy.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>ECONOMY</div>
+                </div>
+                <div>
+                    <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>ENGLISH</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
