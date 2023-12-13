@@ -69,6 +69,10 @@
                     <div>CHEMISTRY</div>
                 </div>
                 <div>
+                    <img src="{{url('/img/Biology.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
+                    <div>BIOLOGY</div>
+                </div>
+                <div>
                     <img src="{{url('/img/English.png')}}" class="d-block img-thumbnail border-black border-4 p-3 mb-4" width="150px" alt="...">
                     <div>ENGLISH</div>
                 </div>
